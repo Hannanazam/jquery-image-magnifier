@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Image Zoom | jquery-izoomify</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./demo/demo.css">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css" rel="stylesheet" />
+</head>
+
+<body>
+ 
+            <div class="col-md-12 mb-5">
+                <div class="img-wrapper img-wrapper3">
+                    <img class="img-fluid" src="./demo/images/accessory-bag-briefcase-1920x1281.jpg" alt="" />
+                </div>
+            </div>
+        
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="./dist/jquery.izoomify.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.img-wrapper3').izoomify({
+                url: './demo/images/accessory-bag-briefcase-1920x1281.jpg',
+                magnify: 2.75,
+                duration: 450,
+                callback: function () {
+                    console.log(this);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

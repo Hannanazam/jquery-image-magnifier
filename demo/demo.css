@@ -1,0 +1,16 @@
+/* DEMO_STYLES only */
+.img-wrapper {
+    max-width: 700px;
+}
+
+.img-wrapper img {
+    width: 100%;
+}
+
+.author {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* end DEMO_STYLES */
